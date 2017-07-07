@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html class="background-100-e">
   <head>
-    <title>Kola</title>
+    <title> Sahara Group </title>
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="state1 background-100-e">
+    <%= render "shared/header" %>
+
     <%= yield %>
   </body>
 </html>

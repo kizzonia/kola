@@ -1,0 +1,61 @@
+<div class="sidebar-wrapper">
+			<div class="logo">
+				<a class="simple-text">
+          <% if user_signed_in? %>
+					<%= current_user.name %>
+          <% end%>
+				</a>
+			</div>
+
+			<ul class="nav">
+				<li class="active">
+					<a href="dashboard.html">
+						<i class="pe-7s-graph"></i>
+						<p>Dashboard</p>
+					</a>
+				</li>
+				<li>
+					<%= link_to edit_user_registration_path do%>
+						<i class="pe-7s-user"></i>
+						<p>User Profile</p>
+					<% end %>
+				</li>
+				<li>
+					<%= link_to admin_projects_path  do %>
+						<i class="pe-7s-note2"></i>
+						<p>Projects</p>
+					<% end %>
+				</li>
+				<li>
+					<a href="typography.html">
+						<i class="pe-7s-news-paper"></i>
+						<p>Typography</p>
+					</a>
+				</li>
+				<li>
+          <%= link_to admin_abouts_path  do %>
+						<i class="pe-7s-user"></i>
+						<p>Board Members</p>
+					<% end %>
+				</li>
+				<li>
+					<a href="maps.html">
+						<i class="pe-7s-map-marker"></i>
+						<p>Maps</p>
+					</a>
+				</li>
+				<li>
+					<a href="notifications.html">
+						<i class="pe-7s-bell"></i>
+						<p>Notifications</p>
+					</a>
+				</li>
+				<li class="active-pro">
+					<%=link_to root_path do %>
+						<i class="pe-7s-rocket"></i>
+						<p>Back To Sahara</p>
+					<% end %>
+				</li>
+			</ul>
+		</div>
+	</div>

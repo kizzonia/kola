@@ -9,8 +9,34 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//
+
+//= require ckeditor/init
 //= require jquery
+//= require bootstrap.min
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require owl.carousel
+//= require jquery.lettering
+//= require prism
+//= require tween.min
+//= require SmoothScroll
+//= require less.min
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+$("#owl-carousel").owlCarousel({
+
+slideSpeed: 300,
+paginationSpeed: 400,
+singleItem: true
+// "singleItem:true" is a shortcut for:
+// items : 1,
+// itemsDesktop : false,
+// itemsDesktopSmall : false,
+// itemsTablet: false,
+// itemsMobile : false
+});
+});
+</script>

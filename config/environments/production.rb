@@ -21,6 +21,10 @@ Rails.application.configure do
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
+  config.assets.digest = true
+
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.svg *.eot *.ttf)
+
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
@@ -74,6 +78,21 @@ Rails.application.configure do
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
+  CarrierWave.configure do |config|
+    config.storage = :fog
+    config.root = Rails.root.join('tmp') # adding these...
+    config.cache_dir = 'carrierwave' # ...two lines
+
+    config.fog_credentials = {
+      :provider               => 'AWS',                        # required
+      :aws_access_key_id      => ENV['AWS_ACCESS_KEY_ID'],                        # required
+      :aws_secret_access_key  => ENV['AWS_SECRET_ACCESS_KEY'],                     # required
+      :region                 => 'us-west-2',                  # optional, defaults to 'us-east-1'
+    }
+    config.fog_directory  = ENV['S3_BUCKET_NAME']                             # required
+    config.fog_public     = true                                   # optional, defaults to true
+    config.fog_attributes = {'Cache-Control'=>'max-age=315576000'}  # optional, defaults to {}
+  end
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)

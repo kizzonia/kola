@@ -1,0 +1,96 @@
+
+      <div id="owl-carousel" class="slider owl-carousel owl-theme">
+
+            <!-- Slide -->
+            <div class=" i item " style="background-image: url(<%= asset_path 'bg1.png' %>); " >
+              <div class="content home-alice full-size colors-a background-transparent">
+                <div class="container-fluid">
+                  <div class="row p">
+                    <div class="col-md-5 col-md-offset-1">
+                      <h1 class="heading text-left">SAHARA GROUP </h1>
+                      <p class="text-right title">
+                      Sahara Group is a leading privately owned Power, Energy, Gas and Infrastructure Conglomerate established in 1996 with operating companies active in the downstream, midstream, upstream, infrastructure and power sectors. Sahara has presence in different locations including Africa, The Caribbean, Asia and Europe.
+                      </p>
+                      <p class="text-right"><a href="#about" class="button background-60-d heading-d">About Us</a><a href="#work" class="button background-60-f heading-f">Our Work</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide -->
+            <div class=" i item " style="background-image: url(<%= asset_path 'bg2.png' %>); " >
+              <div class="content home-alice full-size colors-a background-transparent">
+                <div class="container-fluid">
+                  <div class="row p">
+                    <div class="col-md-5 col-md-offset-1">
+                      <h1 class="heading text-left">SAHARA GROUP </h1>
+                      <p class="text-right title">
+                 Sahara has presence in different locations including Africa, The Caribbean, Asia and Europe.     The Group's strategy is to replicate its successes in Oil and Gas sector in the Energy & Infrastructure sector. .
+                      </p>
+                      <p class="text-right"><a href="#about" class="button background-60-d heading-d">About Us</a><a href="#work" class="button background-60-f heading-f">Our Work</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide -->
+            <div class=" i item " style="background-image: url(<%= asset_path 'bg3.png' %>);">
+              <div class="content home-alice full-size colors-a background-transparent">
+                <div class="container-fluid">
+                  <div class="row p">
+                    <div class="col-md-5 col-md-offset-1">
+                      <h1 class="heading text-left">SAHARA GROUP </h1>
+                      <p class="text-right title">
+                      To achieve this, Sahara has set out a roadmap for investing in people, processes, strategic acquisitions, principal investments and continuous expansion within, initially, the West African energy & infrastructure space, and then globally.
+
+                      </p>
+                      <p class="text-right"><a href="#about" class="button background-60-d heading-d">About Us</a><a href="#work" class="button background-60-f heading-f">Our Work</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide -->
+            <div class=" i item " style="background-image: url(<%= asset_path 'bg3.png' %>);">
+              <div class="content home-alice full-size colors-a background-transparent">
+                <div class="container-fluid">
+                  <div class="row p">
+                    <div class="col-md-5 col-md-offset-1">
+                      <h1 class="heading text-left">SAHARA GROUP </h1>
+                      <p class="text-right title">
+                    Using the priceless gifts of nature to make the world a better place is a quest that requires global partnerships. We are positioning our people and processes to support renewable energy initiatives to deliver a clean future of sustainable growth and development.
+
+                      </p>
+                      <p class="text-right"><a href="#team" class="button background-60-d heading-d">About Us</a> <%= link_to "Our Work", projects_path, class: "button background-60-f heading-f" %></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <script type="text/javascript">
+            $(document).ready(function() {
+            $("#owl-carousel").owlCarousel({
+
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            singleItem: true,
+                autoPlay:true,
+                autoPlayTimeout:5000,
+                autoPlayHoverPause:false,
+                loop:true,
+                items:3,
+                pagination:true,
+                responsive:true,
+                transitionStyle:'fadeUp'
+            // "singleItem:true" is a shortcut for:
+            // items : 1,
+            // itemsDesktop : false,
+            // itemsDesktopSmall : false,
+            // itemsTablet: false,
+            // itemsMobile : false
+            });
+            });
+            </script>

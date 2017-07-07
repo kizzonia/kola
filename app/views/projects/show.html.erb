@@ -1,0 +1,74 @@
+
+<div class="view">
+<div class="content no-bottom-padding colors-e">
+    <div class="container">
+      <h2><span class="highlight"><%= @project.title %></span></h2>
+      <p class="header-details"><span class="highlight">Some Recent</span> Projects</p>
+      <p class="lead"></p>
+    </div>
+  </div>
+</div>
+<main class="main-container">
+
+    <!-- Section: Single Project -->
+    <div class="section section-small single-project">
+        <div class="container">
+            <div class="row">
+
+                <!-- Project Images -->
+                <div class="col-md-6">
+                    <div class="image">
+                      <div class="gallery-image">
+                        <%= image_tag (@project.image_url.to_s), class: "image-popup" %>
+                      </div>
+                    </div>
+
+
+                        </div>
+
+
+                <!-- /Project Images -->
+
+                <!-- Project Information -->
+                <div class="col-md-6 information">
+
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                          
+                        </div>
+
+
+
+                    </div>
+
+
+
+                    <h3 class="title">Project Details</h3>
+                    <p>
+                        <%= raw(@project.content )%>
+                    </p>
+
+
+                    <ul class="details">
+
+                        <li><span>Date: </span> <%= @project.date %></li>
+
+                    </ul>
+
+                    <ul class="social-share">
+                        <li><a href="#"><i class="fa fa-fw fa-facebook"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-twitter"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-google-plus"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-dribbble"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-pinterest"></i> </a></li>
+                    </ul>
+
+
+                </div>
+                <!-- /Project Information -->
+
+            </div>
+        </div>
+    </div>
+    <!-- /Section: Single Project -->
