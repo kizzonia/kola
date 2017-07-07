@@ -1,5 +1,6 @@
 CarrierWave.configure do |config|
   config.storage = :fog
+ config.fog_provider = 'fog/aws'  
   config.root = Rails.root.join('tmp') # adding these...
   config.cache_dir = 'carrierwave' # ...two lines
 

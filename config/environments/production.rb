@@ -80,6 +80,7 @@ Rails.application.configure do
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
   CarrierWave.configure do |config|
     config.storage = :fog
+        config.fog_provider = 'fog/aws'  
     config.root = Rails.root.join('tmp') # adding these...
     config.cache_dir = 'carrierwave' # ...two lines
 
