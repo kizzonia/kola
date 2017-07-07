@@ -34,9 +34,10 @@
 
                     <div class="row">
 
-                        <div class="col-sm-6">
-                          
-                        </div>
+                                          <h3 class="title">Project Details</h3>
+                      <p>
+                          <%= raw(@project.content)%>
+                      </p>
 
 
 
@@ -44,10 +45,7 @@
 
 
 
-                    <h3 class="title">Project Details</h3>
-                    <p>
-                        <%= raw(@project.content )%>
-                    </p>
+
 
 
                     <ul class="details">
@@ -66,9 +64,20 @@
 
 
                 </div>
+
                 <!-- /Project Information -->
 
             </div>
+            <div class="row">
+              <div class="col-md-12">
+              <div class="project-information">
+                <h3> More Imformation </h3>
+                <p><%= raw(@project.more) %> <p>
+              </div>
+              </div>
+            </div>
+
+
         </div>
     </div>
     <!-- /Section: Single Project -->
