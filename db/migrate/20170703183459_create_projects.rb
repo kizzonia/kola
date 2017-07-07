@@ -4,7 +4,7 @@ class CreateProjects < ActiveRecord::Migration[5.0]
       t.string :title
       t.text :content
       t.datetime :date
-      t.text :more
+    
 
       t.timestamps
     end
