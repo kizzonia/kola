@@ -30,6 +30,7 @@ gem 'owlcarousel-rails'
 gem 'bcrypt-ruby', '~> 3.0.0', :require => "bcrypt"
 gem 'devise'
 gem 'carrierwave'
+gem "mini_magick"
 gem 'fog', require: 'fog/aws'
 # gem 'bcrypt', '~> 3.1.7'
 # Use Capistrano for deployment
