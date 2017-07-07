@@ -24,7 +24,7 @@
 
 
 
-<script type="text/javascript">
+
 $(document).ready(function() {
 $("#owl-carousel").owlCarousel({
 
@@ -39,4 +39,3 @@ singleItem: true
 // itemsMobile : false
 });
 });
-</script>
